@@ -7,7 +7,7 @@ using System.IO;
 public class ItemDataBase : MonoBehaviour {
     public List<Item> database = new List<Item>();
     private JsonData itemData;
-    void Start()
+    void Awake()
     {
         itemData = JsonMapper.ToObject(File.ReadAllText(Application.dataPath + "/StreamingAssets/Items.json"));
         ConstructItemDatabase();

@@ -21,8 +21,7 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     void Start () {
 
         _player = GameObject.Find("Player");
-        if (_player != null)
-        {
+        if (_player != null) {
            _inventory = _player.GetComponent<PlayerInventory>().inventory.GetComponent<Inventory>();
         }
         renderer = GetComponent<MeshRenderer>();
@@ -30,11 +29,10 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
               
 	}
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
+    public void OnPointerEnter(PointerEventData eventData) {
         showGui = true;
          renderer.material.color = highlightColor;
-          }
+    }
 
     public void OnPointerExit(PointerEventData eventData)
     {

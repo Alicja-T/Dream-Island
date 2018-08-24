@@ -30,7 +30,7 @@ public class Item  {
             this.Rarity = rarity;
             this.Slug = slug;
             this.Sprite = Resources.Load<Sprite>("Sprites/Items/" + slug);
-            this.itemModel = Resources.Load<GameObject>("Models/Items/" + slug);
+            this.itemModel = Resources.Load<GameObject>("Models/" + slug);
         }
 
         public Item()
