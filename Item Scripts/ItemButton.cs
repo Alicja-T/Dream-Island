@@ -31,6 +31,7 @@ public class ItemButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void OnPointerEnter(PointerEventData eventData) {
         showGui = true;
+        Debug.Log("Mouse hover");
          renderer.material.color = highlightColor;
     }
 

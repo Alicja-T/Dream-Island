@@ -14,8 +14,6 @@ public class RandomLootSystem : MonoBehaviour {
             Terrain terrain = Terrain.activeTerrain;
             float x = Random.Range(320, 1700);
             float z = Random.Range(300, 1760);
-
-            print(itemList.database[0].Title);
             GameObject randomItem = (GameObject)Instantiate(itemList.database[randomNumber].itemModel);
             ItemButton button = randomItem.AddComponent<ItemButton>();
             button.SetItemID(itemList.database[randomNumber].ID);

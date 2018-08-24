@@ -31,6 +31,8 @@ public class Player : MonoBehaviour
         }
     }
 
+
+
     void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
@@ -43,8 +45,34 @@ public class Player : MonoBehaviour
         anim.SetFloat("Direction", h);
         anim.speed = animSpeed;
 		anim.SetBool ("Sit", isSitting);
+        CollectItem();
+    }
+
+    void CollectItem() {
+
+        if (Input.GetMouseButtonDown(0))
+        { //left mouse button
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                print("Collider tag " + hit.collider.tag);
+                if (hit.collider.tag == "Pickable Item")
+                {
+                    print("You clicked: " + hit.collider.name);
+
+                }
+
+            }
+
+
+        }//if mousebutton down end
+
+
+
     }
 
 
-   
+
 }
