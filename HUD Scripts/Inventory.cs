@@ -33,7 +33,7 @@ public class Inventory : MonoBehaviour {
     public List<GameObject> mainSlots = new List<GameObject>();
     public GameObject[] equipSlots; 
 
-    void Start()
+    void Awake()
     {
         equipSlots = new GameObject[6];
         database = GetComponent<ItemDataBase>();
@@ -58,7 +58,7 @@ public class Inventory : MonoBehaviour {
             recipesFound.Add(Instantiate(recipeSlot));
             recipesFound[i].transform.Translate( Vector3.zero );
             recipesFound[i].transform.SetParent(recipePanel.transform);
-            AddRecipe(i);
+            //AddRecipe(i);
         }
 
              

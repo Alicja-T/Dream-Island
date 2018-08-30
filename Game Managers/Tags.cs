@@ -12,6 +12,9 @@ public class Tags {
     //Scene Names
     public static string MAINMENU_SCENE = "Main Menu";
 
+    //Inventory
+    public static string INVENTORY_TAG = "Inventory";
+
     //Player Animation Tags
     public static string ANIMATION_IDLE = "idle";
     public static string ANIMATION_WALK = "walk";

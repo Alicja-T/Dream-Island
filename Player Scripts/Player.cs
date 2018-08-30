@@ -10,25 +10,18 @@ public class Player : MonoBehaviour
     public float animSpeed = 1.5f;
     private Animator anim;
     private CapsuleCollider col;
-    Inventory inventory;
+    public Inventory inventory;
     PlayerInventory playerInv;
     bool isSitting = false;
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
         inputManagerDatabase = (InputManager)Resources.Load("InputManager");
         anim = GetComponent<Animator>();
         col = GetComponent<CapsuleCollider>();
-       if (GameObject.Find("Player") != null)
-        {
-            playerInv = GameObject.Find("Player").GetComponent<PlayerInventory>();
-
-            if (playerInv.inventory != null)
-            {
-                inventory = playerInv.GetComponent<Inventory>();
-            }
-        }
+        playerInv = GetComponent<PlayerInventory>();
+        
     }
 
 
@@ -55,12 +48,19 @@ public class Player : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
-            {
-                print("Collider tag " + hit.collider.tag);
-                if (hit.collider.tag == "Pickable Item")
-                {
-                    print("You clicked: " + hit.collider.name);
+            if (Physics.Raycast(ray, out hit)) {
+                if (hit.collider.tag == "Pickable Item") {
+
+                    ItemButton itb = hit.collider.gameObject.GetComponent<ItemButton>();
+                    string name = itb.GetItemName();
+                    if (inventory == null)
+                    {
+                        print("no inventory");
+                    }
+                    else print("there is an inventory");
+                    inventory.AddItem(itb.GetItemID());
+                    Destroy(hit.collider.gameObject);
+                    print("Added " + name + " to inventory");
 
                 }
 

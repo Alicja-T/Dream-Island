@@ -26,9 +26,9 @@ public class ThirdPersonCamera : MonoBehaviour
             if (hit.collider.tag == "Pickable Item") {
                 ItemButton itb = hit.collider.gameObject.GetComponent<ItemButton>();
                 if (itb != null) {
-                    print("has Item Button");
+                    itb.ShowItemName();
                 }
-                print(hit.collider.name);
+                //print(hit.collider.name);
             }
         }
 		
