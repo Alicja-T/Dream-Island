@@ -1,0 +1,157 @@
+[
+  {
+    "id": 0,
+	"title": "Straw",
+    "type": 6,
+	"stats": {
+	  "energy": 0,
+	  "protein": 0,
+	  "thirst" : 0
+	},
+	"description": "Delicious vegetable with lots of betakaroten. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "Straw"
+  },
+  {
+    "id": 1,
+	"title": "bottle",
+    "type": 6,
+	"stats": {
+	  "energy": 5,
+	  "protein": 0,
+	  "thirst" : 10
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "Bottle"
+  },
+  {
+    "id": 2,
+	"title": "Sunglasses",
+    "type": 1,
+	"stats": {
+	  "energy": 0,
+	  "protein": 0,
+	  "thirst" : 0
+	},
+	"description": "Wow, it's shiny...",
+	"stackable": false,
+	"rarity": 8,
+	"slug": "Crate"
+  },
+  {
+    "id": 3,
+	"title": "Shirt",
+    "type": 2,
+	"stats": {
+	  "energy": 0,
+	  "protein": 0,
+	  "thirst" : 0
+	},
+	"description": "Wow, it's shiny...",
+	"stackable": false,
+	"rarity": 8,
+	"slug": "AmmoBox"
+  },
+  {
+    "id": 4,
+	"title": "Orange",
+    "type": 6,
+	"stats": {
+	  "energy": 2,
+	  "protein": 0,
+	  "thirst" : 5
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "Orange"
+  },
+  {
+    "id": 5,
+	"title": "Mushroom",
+    "type": 6,
+	"stats": {
+	  "energy": 2,
+	  "protein": 0,
+	  "thirst" : 1
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "Shroom_04"
+  },
+  {
+    "id": 6,
+	"title": "Stone",
+    "type": 6,
+	"stats": {
+	  "energy": 0,
+	  "protein": 0,
+	  "thirst" : 0
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "RockA"
+  },
+  {
+    "id": 7,
+	"title": "Antibiotic",
+    "type": 6,
+	"stats": {
+	  "energy": 2,
+	  "protein": 0,
+	  "thirst" : 5
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "BananaPlant"
+  },
+  {
+    "id": 8,
+	"title": "Matches",
+    "type": 6,
+	"stats": {
+	  "energy": 2,
+	  "protein": 0,
+	  "thirst" : 5
+	},
+	"description": "Juicy fruit that helps to quench your thirst. Eat it while it's still fresh.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "Crate"
+  },
+  {
+    "id": 9,
+	"title": "Book",
+    "type": 2,
+	"stats": {
+	  "energy": 0,
+	  "protein": 0,
+	  "thirst" : 0
+	},
+	"description": "A Mysterious Book.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "book"
+  },
+  {
+    "id": 10,
+	"title": "Watermelon",
+    "type": 6,
+	"stats": {
+	  "energy": 2,
+	  "protein": 0,
+	  "thirst" : 4
+	},
+	"description": "A Juicy Fruit.",
+	"stackable": true,
+	"rarity": 8,
+	"slug": "watermelon"
+  }
+
+]

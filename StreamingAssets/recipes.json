@@ -1,0 +1,24 @@
+[
+{
+"id": 0,
+"name": "Fire Place",
+"slug": "Fireplace",
+"ingredient1": 0, 
+"ingred1count" : 3,
+"ingredient2": 6,
+"ingred2count" : 2,
+"ingredient3": 8,
+"ingred3count" : 1
+},
+{
+"id": 1,
+"name": "Straw Bed",
+"slug": "Strawbed",
+"ingredient1": 0, 
+"ingred1count" : 3,
+"ingredient2": 3,
+"ingred2count" : 2,
+"ingredient3": 4,
+"ingred3count" : 2
+}
+]
